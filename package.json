@@ -1,0 +1,22 @@
+{
+  "name": "dragon-run",
+  "version": "1.0.0",
+  "description": "Драконий забег",
+  "main": "main.js",
+  "author": "Dragon Run",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.dragonrun.game",
+    "productName": "DragonRun",
+    "files": ["main.js", "www/**"],
+    "directories": { "output": "dist" },
+    "win": { "target": "portable" }
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
